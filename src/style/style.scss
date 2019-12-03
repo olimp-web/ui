@@ -1,0 +1,14 @@
+@import "normalize";
+@import "variables"; //если мы хотим переменные использовать между разными файлами, то импортировать их необходимо как можно раньше
+@import "typography";
+@import "buttons";
+
+.layout {
+  background-color: $background_color;
+}
+
+.card {
+  background-color: $block_color;
+  padding: 60px;
+  margin: 20px;
+}

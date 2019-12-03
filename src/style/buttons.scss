@@ -1,0 +1,40 @@
+.btn {
+  background-color: $btn-color;
+  padding: 22px 96px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+/* identical to box height, or 100% */
+  color: #FFFFFF;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 0px;
+
+  &:hover{
+    background-color: $btn-hover-color;
+  }
+
+  &:active, &:focus{
+    background-color: $btn-active-color;
+    outline-style: none;
+  }
+
+  &--disabled{
+    cursor: not-allowed;
+    background-color: $btn-disabled-color;
+    &:hover{
+      background-color: $btn-disabled-color;
+    }
+  }
+
+  &--error{
+    background-color: $error-color;
+  }
+
+  &--accent{
+    background-color: $accent-color;
+  }
+
+}
